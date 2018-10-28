@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,45 +29,9 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body text-center">
-            <a href="https://vuex.reststate.org" class="d-none d-md-block">
-              <img src="images/vue.png" width="150" height="150" alt="Vue.js logo" />
-            </a>
-            <h5 class="card-title mt-3">
-              <a href="https://vuex.reststate.org">Vuex</a>
-            </h5>
-            <p>For Vue.js apps using the standard Vuex state store</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body text-center">
-            <a href="https://mobx.reststate.org" class="d-none d-md-block">
-              <img src="images/mobx.png" width="150" height="150" alt="MobX logo" />
-            </a>
-            <h5 class="card-title mt-3">
-              <a href="https://mobx.reststate.org">MobX</a>
-            </h5>
-            <p>For MobX apps, including React apps</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 mb-4">
-        <div class="card">
-          <div class="card-body text-center">
-            <a href="https://client.reststate.org" class="d-none d-md-block">
-              <img src="images/js.png" width="150" height="150" alt="JS logo" />
-            </a>
-            <h5 class="card-title mt-3">
-              <a href="https://client.reststate.org">Client</a>
-            </h5>
-            <p>A stateless JSON API client for use in any JavaScript app</p>
-          </div>
-        </div>
-      </div>
+      {% include library-card.html name="Vuex" url="https://vuex.reststate.org" image="vue.png" alt="Vue.js logo" description="For Vue.js apps using the standard Vuex state store" %}
+      {% include library-card.html name="MobX" url="https://mobx.reststate.org" image="mobx.png" alt="MobX logo" description="For MobX apps, including React apps" %}
+      {% include library-card.html name="Client" url="https://client.reststate.org" image="js.png" alt="JS logo" description="A stateless JSON API client for use in any JavaScript app" %}
     </div>
   </div>
 </body>
