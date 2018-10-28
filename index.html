@@ -1,38 +1,17 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128167246-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-128167246-1');
-  </script>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>RestState</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-  <script src="main.js"></script>
-</head>
-<body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1>reststate</h1>
-      <p class="lead">Zero-Configuration Data Layers</p>
-    </div>
-  </div>
-
+<div class="jumbotron">
   <div class="container">
-    <div class="row">
-      {% include library-card.html name="Vuex" url="https://vuex.reststate.org" image="vue.png" alt="Vue.js logo" description="For Vue.js apps using the standard Vuex state store" %}
-      {% include library-card.html name="MobX" url="https://mobx.reststate.org" image="mobx.png" alt="MobX logo" description="For MobX apps, including React apps" %}
-      {% include library-card.html name="Client" url="https://client.reststate.org" image="js.png" alt="JS logo" description="A stateless JSON API client for use in any JavaScript app" %}
-    </div>
+    <h1>reststate</h1>
+    <p class="lead">Zero-Configuration Data Layers</p>
   </div>
-</body>
-</html>
+</div>
+
+<div class="container">
+  <div class="row">
+    {% include library-card.html name="Vuex" url="https://vuex.reststate.org" image="vue.png" alt="Vue.js logo" description="For Vue.js apps using the standard Vuex state store" %}
+    {% include library-card.html name="MobX" url="https://mobx.reststate.org" image="mobx.png" alt="MobX logo" description="For MobX apps, including React apps" %}
+    {% include library-card.html name="Client" url="https://client.reststate.org" image="js.png" alt="JS logo" description="A stateless JSON API client for use in any JavaScript app" %}
+  </div>
+</div>
